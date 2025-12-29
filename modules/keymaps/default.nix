@@ -45,6 +45,49 @@
         action = "<cmd>qa<cr>";
         desc = "Quit all";
       }
+      # Buffers
+      {
+        key = "<S-h>";
+        mode = "n";
+        silent = true;
+        action = "<cmd>bprev<cr>";
+        desc = "Previous Buffer";
+      }
+      {
+        key = "<S-l>";
+        mode = "n";
+        silent = true;
+        action = "<cmd>bnext<cr>";
+        desc = "Next Buffer";
+      }
+      {
+        key = "<leader>bb";
+        mode = "n";
+        silent = true;
+        action = "<cmd>e #<cr>";
+        desc = "Switch to Other Buffer";
+      }
+      {
+        key = "<leader>bd";
+        mode = "n";
+        silent = true;
+        action = "<cmd>lua Snacks.bufdelete()<cr>";
+        desc = "Delete Buffer";
+      }
+      {
+        key = "<leader>bo";
+        mode = "n";
+        silent = true;
+        action = "<cmd>lua Snacks.bufdelete.other()<cr>";
+        desc = "Delete Other Buffers";
+      }
+      {
+        key = "<leader>bD";
+        mode = "n";
+        silent = true;
+        action = "<cmd>:bd<cr>";
+        desc = "Delete Buffer and Window";
+      }
 
       # UI
       {
