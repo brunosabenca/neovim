@@ -19,16 +19,8 @@
         # <https://notashelf.github.io/nvf/options.html>
         config.vim = {
           theme.enable = true;
-
-          languages = {
-            enableLSP = true;
-            enableFormat = true;
-            enableTreesitter = true;
-            enableExtraDiagnostics = true;
-
-            # Nix language and diagnostics.
-            nix.enable = true;
-          };
+          theme.name = "catppuccin";
+          theme.style = "mocha";
         };
       };
 
@@ -38,7 +30,13 @@
 
         modules = [
           configModule
-          ./modules/general
+          ./modules/keymaps
+          ./modules/languages
+          ./modules/mini
+          ./modules/options
+          ./modules/picker
+          ./modules/snacks
+          ./modules/utils
         ];
       };
     in {
