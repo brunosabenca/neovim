@@ -38,6 +38,13 @@
         action = "<cmd>w<cr>";
         desc = "Save file";
       }
+      {
+        key = "<leader>qq";
+        mode = "n";
+        silent = true;
+        action = "<cmd>qa<cr>";
+        desc = "Quit all";
+      }
 
       # UI
       {
