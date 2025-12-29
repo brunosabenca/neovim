@@ -18,9 +18,11 @@
         # You may browse available options for nvf on the online manual. Please see
         # <https://notashelf.github.io/nvf/options.html>
         config.vim = {
-          theme.enable = true;
-          theme.name = "catppuccin";
-          theme.style = "mocha";
+          theme = {
+            enable = true;
+            name = "catppuccin";
+            style = "mocha";
+          };
         };
       };
 
